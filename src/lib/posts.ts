@@ -33,3 +33,9 @@ export function getAllPosts(): Post[] {
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
+
+export function getAllCategories(): string[] {
+  const posts = getAllPosts();
+  const categories = posts.map(post => post.category);
+  return [...new Set(categories)];
+}

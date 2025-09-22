@@ -6,6 +6,7 @@ import { Post } from '@/lib/types';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { FormattedDate } from './formatted-date';
+import { cn } from '@/lib/utils';
 
 interface PostCardProps {
   post: Post;
@@ -25,9 +26,14 @@ export function PostCard({ post }: PostCardProps) {
           />
         </div>
         <CardContent className="p-6 flex flex-col flex-grow">
-          <Badge variant="secondary" className="mb-2 self-start bg-accent text-accent-foreground">
-            {post.category}
-          </Badge>
+          <div className="mb-2 self-start">
+             <Link href={`/category/${post.category.toLowerCase()}`} className={cn(
+                "relative z-10 rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+                "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+             )}>
+                {post.category}
+            </Link>
+          </div>
           <h3 className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors text-primary/90">
             {post.title}
           </h3>

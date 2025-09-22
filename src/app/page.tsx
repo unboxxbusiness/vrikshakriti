@@ -1,5 +1,7 @@
-import { getAllPosts } from '@/lib/posts';
+import { getAllPosts, getAllCategories } from '@/lib/posts';
 import { PostSearch } from '@/components/blog/post-search';
+import { CategoryList } from '@/components/blog/category-list';
+import { Separator } from '@/components/ui/separator';
 
 export const metadata = {
   title: 'Vrikshakriti | Luxury Modular Kitchen Design Blog',
@@ -9,6 +11,7 @@ export const metadata = {
 
 export default function Home() {
   const allPosts = getAllPosts();
+  const allCategories = getAllCategories();
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -20,6 +23,8 @@ export default function Home() {
           Crafting Exquisite Modular Kitchens for Your Home.
         </p>
       </div>
+      <CategoryList categories={allCategories} />
+      <Separator className="my-12" />
       <PostSearch allPosts={allPosts} />
     </div>
   );

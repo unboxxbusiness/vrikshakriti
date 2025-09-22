@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Post } from '@/lib/types';
 import { FormattedDate } from '@/components/blog/formatted-date';
 import { SocialShare } from '@/components/blog/social-share';
+import Link from 'next/link';
 
 interface PostPageClientProps {
   post: Post;
@@ -15,9 +16,11 @@ export function PostPageClient({ post }: PostPageClientProps) {
   return (
     <>
       <header className="mb-8">
-        <Badge variant="secondary" className="mb-4 bg-accent text-accent-foreground">
-          {post.category}
-        </Badge>
+        <Link href={`/category/${post.category.toLowerCase()}`}>
+            <Badge variant="secondary" className="mb-4 bg-accent text-accent-foreground hover:bg-accent/80 transition-colors">
+              {post.category}
+            </Badge>
+        </Link>
         <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-3 tracking-tight text-primary">
           {post.title}
         </h1>
