@@ -68,7 +68,7 @@ export function TableOfContents({ content }: { content: string }) {
   }
   
   return (
-    <Card className="bg-accent/50 border-accent sticky top-24">
+    <Card className="bg-accent/50 border-accent">
       <CardHeader>
         <CardTitle className="text-primary">Table of Contents</CardTitle>
       </CardHeader>

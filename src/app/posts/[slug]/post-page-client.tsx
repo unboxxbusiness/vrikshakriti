@@ -8,6 +8,7 @@ import { AuthorBio } from '@/components/blog/author-bio';
 import { Post } from '@/lib/types';
 import { FormattedDate } from '@/components/blog/formatted-date';
 import { TableOfContents } from '@/components/blog/table-of-contents';
+import { SocialShare } from '@/components/blog/social-share';
 
 interface PostPageClientProps {
   post: Post;
@@ -24,10 +25,21 @@ export function PostPageClient({ post }: PostPageClientProps) {
           <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-3 tracking-tight text-primary">
             {post.title}
           </h1>
-          <div className="text-muted-foreground text-base flex items-center">
-            <span>by {post.author}</span>
-            <span className="mx-2">•</span>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-4 text-muted-foreground text-base">
+            <div className="flex items-center gap-2">
+              <Image 
+                src={post.authorImage}
+                alt={post.author}
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+              <span>by {post.author}</span>
+            </div>
+            <span className="hidden sm:inline">•</span>
             <FormattedDate dateString={post.date} />
+            <span className="hidden sm:inline">•</span>
+            <SocialShare post={post} />
           </div>
         </header>
 
@@ -51,7 +63,9 @@ export function PostPageClient({ post }: PostPageClientProps) {
       </article>
       
       <aside className="lg:col-span-1">
-        <TableOfContents content={post.content} />
+        <div className="sticky top-24">
+          <TableOfContents content={post.content} />
+        </div>
       </aside>
 
     </div>
