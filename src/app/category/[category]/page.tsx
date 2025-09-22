@@ -1,7 +1,6 @@
-import { getAllPosts, getAllCategories } from '@/lib/posts';
+import { getAllPosts } from '@/lib/posts';
 import { PostSearch } from '@/components/blog/post-search';
 import { notFound } from 'next/navigation';
-import { CategoryList } from '@/components/blog/category-list';
 import { Separator } from '@/components/ui/separator';
 
 type CategoryPageProps = {
@@ -17,6 +16,12 @@ export async function generateStaticParams() {
   }));
 }
 
+function getAllCategories(): string[] {
+  const posts = getAllPosts();
+  const categories = posts.map(post => post.category);
+  return [...new Set(categories)];
+}
+
 export async function generateMetadata({ params }: CategoryPageProps) {
     const categoryName = params.category.charAt(0).toUpperCase() + params.category.slice(1);
     return {
@@ -28,7 +33,6 @@ export async function generateMetadata({ params }: CategoryPageProps) {
 
 export default function CategoryPage({ params }: CategoryPageProps) {
   const allPosts = getAllPosts();
-  const allCategories = getAllCategories();
   
   const filteredPosts = allPosts.filter(
     (post) => post.category.toLowerCase() === params.category
@@ -51,7 +55,6 @@ export default function CategoryPage({ params }: CategoryPageProps) {
             </p>
         </div>
 
-        <CategoryList categories={allCategories} currentCategory={params.category} />
         <Separator className="my-12" />
 
         <PostSearch allPosts={filteredPosts} />
