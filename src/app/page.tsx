@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 
 export default function Home() {
-  const initialPosts = getAllPosts();
+  const allPosts = getAllPosts();
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <PostList initialPosts={initialPosts} />
+      <PostList allPosts={allPosts} />
     </div>
   );
 }
