@@ -7,24 +7,7 @@ import { Separator } from '@/components/ui/separator';
 import { AuthorBio } from '@/components/blog/author-bio';
 import { RecentPosts } from '@/components/blog/recent-posts';
 import { Post } from '@/lib/types';
-import { useState, useEffect } from 'react';
-
-// A new client component to render the date safely
-function FormattedDate({ dateString }: { dateString: string }) {
-  const [formattedDate, setFormattedDate] = useState('');
-
-  useEffect(() => {
-    setFormattedDate(
-      new Date(dateString).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })
-    );
-  }, [dateString]);
-
-  return <>{formattedDate}</>;
-}
+import { FormattedDate } from '@/components/blog/formatted-date';
 
 interface PostPageClientProps {
   post: Post;
@@ -39,7 +22,9 @@ export function PostPageClient({ post, recentPosts }: PostPageClientProps) {
           <Badge variant="secondary" className="mb-4">
             {post.category}
           </Badge>
-          <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-3 tracking-tight">{post.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-3 tracking-tight">
+            {post.title}
+          </h1>
           <div className="text-muted-foreground text-base">
             <span>by {post.author}</span>
             <span className="mx-2">•</span>
@@ -48,15 +33,15 @@ export function PostPageClient({ post, recentPosts }: PostPageClientProps) {
             </span>
           </div>
         </header>
-        
+
         <div className="relative aspect-video mb-12 rounded-lg overflow-hidden">
           <Image
-              src={post.imageUrl}
-              alt={post.title}
-              fill
-              className="object-cover"
-              data-ai-hint={`${post.category} ${post.title.split(' ')[0]}`}
-            />
+            src={post.imageUrl}
+            alt={post.title}
+            fill
+            className="object-cover"
+            data-ai-hint={`${post.category} ${post.title.split(' ')[0]}`}
+          />
         </div>
 
         <div className="prose prose-lg mx-auto">
@@ -64,15 +49,13 @@ export function PostPageClient({ post, recentPosts }: PostPageClientProps) {
         </div>
 
         <Separator className="my-12" />
-        
-        <AuthorBio post={post} />
 
+        <AuthorBio post={post} />
       </article>
 
       <Separator className="my-16" />
 
       <RecentPosts posts={recentPosts} />
-
     </div>
   );
 }
