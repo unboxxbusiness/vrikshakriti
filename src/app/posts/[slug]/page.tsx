@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PostPageProps) {
   }
 
   return {
-    title: `${post.title} | vrikshakriti`,
+    title: `${post.title} | KitchenR`,
     description: post.summary,
   };
 }
@@ -57,7 +57,7 @@ export default function PostPage({ params }: PostPageProps) {
     <div className="max-w-6xl mx-auto">
       <article className="max-w-3xl mx-auto">
         <header className="mb-8">
-          <Badge variant="default" className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
+          <Badge variant="default" className="mb-4">
             {post.category}
           </Badge>
           <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-3 tracking-tight">{post.title}</h1>

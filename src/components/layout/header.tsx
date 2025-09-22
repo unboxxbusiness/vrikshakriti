@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Rss } from 'lucide-react';
+import { ChefHat } from 'lucide-react';
 
 export function Header() {
   return (
@@ -9,10 +9,10 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-headline text-foreground hover:text-primary transition-colors">
-              <span className="inline-block p-2 bg-blue-600 text-white rounded-md">
-                <Rss size={18} />
+              <span className="inline-block p-2 bg-primary text-primary-foreground rounded-md">
+                <ChefHat size={18} />
               </span>
-              vrikshakriti
+              KitchenR
             </Link>
           </div>
           <nav>

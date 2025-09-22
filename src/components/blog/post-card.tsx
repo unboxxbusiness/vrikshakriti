@@ -28,7 +28,7 @@ export function PostCard({ post }: PostCardProps) {
           />
         </div>
         <CardContent className="p-6 flex flex-col flex-grow">
-            <Badge variant="default" className="mb-2 self-start bg-blue-100 text-blue-800 hover:bg-blue-200">
+            <Badge variant="default" className="mb-2 self-start">
               {post.category}
             </Badge>
             <h3 className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">{post.title}</h3>

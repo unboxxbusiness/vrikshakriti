@@ -2,187 +2,195 @@ import { Post } from './types';
 
 const posts: Post[] = [
   {
-    slug: 'the-future-of-work-remote-collaboration-tools',
-    title: 'The Future of Work: Remote Collaboration Tools',
+    slug: 'l-shaped-modular-kitchen-designs',
+    title: '5 L-Shaped Modular Kitchen Designs for Small Spaces',
     date: '2024-07-15',
-    category: 'Technology',
-    author: 'Jane Doe',
+    category: 'Designs',
+    author: 'Alex Interior',
     authorImage: 'https://picsum.photos/seed/author1/100/100',
-    authorBio: 'Jane Doe is a tech enthusiast and writer specializing in the future of work and digital collaboration.',
-    imageUrl: 'https://picsum.photos/seed/1/600/400',
+    authorBio: 'Alex is a kitchen designer with a passion for creating beautiful and functional spaces.',
+    imageUrl: 'https://picsum.photos/seed/kitchen1/600/400',
     summary:
-      "An in-depth look at the tools shaping remote collaboration and the future of work.",
+      "Maximize your kitchen's potential with these clever L-shaped layouts perfect for smaller homes.",
     content: `
-# The Future of Work: Remote Collaboration Tools
+# 5 L-Shaped Modular Kitchen Designs for Small Spaces
 
-The world of work is changing, and remote collaboration is at the forefront. This post explores the tools that are making it possible.
+The L-shaped kitchen is a classic for a reason. It's efficient, versatile, and works wonders in small spaces.
 
-## Communication Hubs
+## 1. The Classic Corner
 
-Tools like Slack and Microsoft Teams have become the new office hallways.
+Utilize a corner to its fullest by placing your main workstations along two adjacent walls. This creates an efficient work triangle.
 
-## Project Management
+## 2. The Peninsula Add-on
 
-Jira, Asana, and Trello help teams stay organized and on track, no matter where they are.
+Add a peninsula to your L-shape to create extra counter space and a casual dining spot.
 
-## Video Conferencing
+## 3. Open-Concept Flow
 
-Zoom and Google Meet are essential for face-to-face interaction.
+Integrate your L-shaped kitchen with your living area for a seamless, open feel.
+
+## 4. Window as a Focal Point
+
+Design your layout around a window to bring in natural light and create a beautiful view while you cook.
+
+## 5. Smart Storage Solutions
+
+Incorporate pull-out cabinets, corner carousels, and vertical storage to make the most of every inch.
     `,
   },
   {
-    slug: 'mastering-digital-marketing-in-2024',
-    title: 'Mastering Digital Marketing in 2024',
+    slug: 'choosing-the-right-kitchen-countertop',
+    title: 'Quartz vs. Granite: Choosing the Right Kitchen Countertop',
     date: '2024-07-10',
-    category: 'Marketing',
-    author: 'John Smith',
+    category: 'Materials',
+    author: 'Sam Material',
     authorImage: 'https://picsum.photos/seed/author2/100/100',
-    authorBio: 'John Smith is a digital marketing strategist with over 10 years of experience helping businesses grow online.',
-    imageUrl: 'https://picsum.photos/seed/2/600/400',
+    authorBio: 'Sam is a material specialist who helps homeowners choose the perfect surfaces for their kitchens.',
+    imageUrl: 'https://picsum.photos/seed/kitchen2/600/400',
     summary:
-      'Stay ahead of the curve with these essential digital marketing strategies for 2024.',
+      'A detailed comparison between quartz and granite to help you decide on the best countertop for your kitchen.',
     content: `
-# Mastering Digital Marketing in 2024
+# Quartz vs. Granite: Choosing the Right Kitchen Countertop
 
-Digital marketing is always evolving. Here's what you need to know to succeed in 2024.
+The countertop is a key element of your kitchen. Let's compare two of the most popular options: quartz and granite.
 
-## AI in Marketing
+## Granite: The Natural Choice
 
-Artificial intelligence is personalizing marketing campaigns like never before.
+- **Pros:** Each slab is unique, heat-resistant, durable.
+- **Cons:** Porous and requires sealing, can be prone to chipping.
 
-## Video Content is King
+## Quartz: The Engineered Alternative
 
-Short-form video on platforms like TikTok and Instagram Reels is essential for engagement.
+- **Pros:** Non-porous and low-maintenance, wide variety of colors, very durable.
+- **Cons:** Can be damaged by high heat, less natural variation.
 
-## Privacy-First Marketing
+## Which is right for you?
 
-With changing privacy laws, building trust with your audience is key.
+Consider your lifestyle, budget, and aesthetic preferences. If you want a unique, natural look and don't mind some maintenance, granite is a great choice. If you prefer a consistent look with zero maintenance, quartz is the way to go.
     `,
   },
   {
-    slug: 'the-rise-of-ai-in-business-automation',
-    title: 'The Rise of AI in Business Automation',
+    slug: 'must-have-smart-kitchen-appliances',
+    title: '7 Must-Have Smart Appliances for a Modern Kitchen',
     date: '2024-07-05',
-    category: 'Business',
-    author: 'Emily Davis',
+    category: 'Appliances',
+    author: 'Techy Tom',
     authorImage: 'https://picsum.photos/seed/author3/100/100',
-    authorBio: 'Emily Davis writes about the intersection of technology and business, with a focus on AI and automation.',
-    imageUrl: 'https://picsum.photos/seed/3/600/400',
-    summary: 'Discover how AI is revolutionizing business automation and what it means for your company.',
+    authorBio: 'Tom writes about the latest in smart home technology, with a focus on kitchen innovations.',
+    imageUrl: 'https://picsum.photos/seed/kitchen3/600/400',
+    summary: 'Upgrade your kitchen with these smart appliances that will make your life easier and more efficient.',
     content: `
-# The Rise of AI in Business Automation
+# 7 Must-Have Smart Appliances for a Modern Kitchen
 
-AI is no longer science fiction; it's a business reality.
+Technology is transforming the kitchen. Here are some smart appliances to consider.
 
-## What is AI Automation?
-
-It's the use of AI to automate repetitive tasks, freeing up humans for more creative work.
-
-## Examples in Action
-
-- Customer service chatbots
-- Automated financial reporting
-- AI-powered supply chain optimization
-
-## Getting Started
-
-Start small. Identify a bottleneck in your business and see if an AI tool can help.
+1.  **Smart Refrigerator:** Keep track of your groceries and get recipe suggestions.
+2.  **Smart Oven:** Preheat your oven from your phone and get cooking notifications.
+3.  **Smart Dishwasher:** Start a cycle remotely and monitor its progress.
+4.  **Wi-Fi Coffee Maker:** Wake up to the smell of freshly brewed coffee.
+5.  **Smart Faucet:** Control water flow with your voice or a simple touch.
+6.  **Sous Vide Precision Cooker:** Cook food to perfection every time.
+7.  **Automated Composter:** Turn food scraps into nutrient-rich compost with ease.
     `,
   },
   {
-    slug: 'building-a-successful-startup-key-strategies',
-    title: 'Building a Successful Startup: Key Strategies',
+    slug: 'kitchen-design-trends-2024',
+    title: 'Top Kitchen Design Trends to Watch in 2024',
     date: '2024-06-30',
-    category: 'Business',
-    author: 'David Lee',
+    category: 'Trends',
+    author: 'Tina Trendsetter',
     authorImage: 'https://picsum.photos/seed/author4/100/100',
-    authorBio: 'David Lee is a serial entrepreneur and startup mentor who loves sharing his experiences with aspiring founders.',
-    imageUrl: 'https://picsum.photos/seed/4/600/400',
-    summary: 'From idea to execution, these are the key strategies for building a startup that lasts.',
+    authorBio: 'Tina is an interior design consultant who is always on the lookout for the latest trends in home decor.',
+    imageUrl: 'https://picsum.photos/seed/kitchen4/600/400',
+    summary: 'From color palettes to cabinet styles, here are the top kitchen design trends for 2024.',
     content: `
-# Building a Successful Startup: Key Strategies
+# Top Kitchen Design Trends to Watch in 2024
 
-Got a great idea? Here's how to turn it into a successful business.
+Planning a kitchen remodel? Here are the trends you need to know.
 
-## 1. Validate Your Idea
+## 1. Earthy Tones
 
-Before you build anything, make sure there's a market for it.
+Colors inspired by nature, like greens, blues, and warm browns, are in.
 
-## 2. Build a Strong Team
+## 2. Natural Materials
 
-Your first hires are the most important.
+Wood, stone, and other natural materials bring warmth and texture to the kitchen.
 
-## 3. Focus on a Niche
+## 3. Fluted Details
 
-Don't try to be everything to everyone. Solve a specific problem for a specific audience.
+From cabinet fronts to backsplashes, fluted details add a touch of elegance.
 
-## 4. Iterate, Iterate, Iterate
+## 4. Statement Backsplashes
 
-Launch, get feedback, and improve. Repeat.
+Bold patterns and unique materials are making the backsplash a focal point.
+
+## 5. Concealed Storage
+
+Integrated and hidden storage solutions create a clean, uncluttered look.
     `,
   },
   {
-    slug: 'data-analytics-for-business-growth',
-    title: 'Data Analytics for Business Growth',
+    slug: 'guide-to-kitchen-lighting',
+    title: 'A Complete Guide to Perfect Kitchen Lighting',
     date: '2024-06-25',
-    category: 'Technology',
-    author: 'Jessica Brown',
+    category: 'Designs',
+    author: 'Liam Light',
     authorImage: 'https://picsum.photos/seed/author5/100/100',
-    authorBio: 'Jessica Brown is a data scientist who is passionate about helping businesses unlock the power of their data.',
-    imageUrl: 'https://picsum.photos/seed/5/600/400',
-    summary: "Unlock the power of your data to drive business growth and make smarter decisions.",
+    authorBio: 'Liam is a lighting designer who specializes in creating layered and functional lighting schemes for homes.',
+    imageUrl: 'https://picsum.photos/seed/kitchen5/600/400',
+    summary: "Learn how to layer ambient, task, and accent lighting to create a kitchen that's both beautiful and functional.",
     content: `
-# Data Analytics for Business Growth
+# A Complete Guide to Perfect Kitchen Lighting
 
-Data is one of your most valuable assets. Here's how to use it.
+Good lighting is crucial in a kitchen. Here's how to get it right.
 
-## What to Track?
+## 1. Ambient Lighting
 
-- Customer behavior
-- Sales trends
-- Website traffic
+This is the overall illumination of the room. Recessed lights or a central fixture work well.
 
-## Tools of the Trade
+## 2. Task Lighting
 
-- Google Analytics
-- Tableau
-- Mixpanel
+Focused light for specific tasks. Think under-cabinet lighting for countertops.
 
-## Making Data-Driven Decisions
+## 3. Accent Lighting
 
-Use your data to inform everything from product development to marketing campaigns.
+Used to highlight architectural features or decor. Pendant lights over an island are a great example.
+
+## Putting It All Together
+
+A good lighting plan uses a combination of all three types to create a space that is bright, functional, and inviting.
     `,
   },
   {
-    slug: 'cybersecurity-best-practices-for-small-businesses',
-    title: 'Cybersecurity Best Practices for Small Businesses',
+    slug: 'choosing-kitchen-cabinet-finishes',
+    title: 'Matte vs. Glossy: Which Cabinet Finish is Right for You?',
     date: '2024-06-20',
-    category: 'Technology',
-    author: 'Robert Green',
+    category: 'Materials',
+    author: 'Fiona Finish',
     authorImage: 'https://picsum.photos/seed/author6/100/100',
-    authorBio: 'Robert Green is a cybersecurity expert dedicated to helping small businesses protect themselves from online threats.',
-    imageUrl: 'https://picsum.photos/seed/6/600/400',
-    summary: 'Protect your business from cyber threats with these essential security practices.',
+    authorBio: 'Fiona is an expert in finishes and materials, helping clients choose the perfect look for their cabinetry.',
+    imageUrl: 'https://picsum.photos/seed/kitchen6/600/400',
+    summary: 'Explore the pros and cons of matte and glossy cabinet finishes to find the best fit for your kitchen style.',
     content: `
-# Cybersecurity Best Practices for Small Businesses
+# Matte vs. Glossy: Which Cabinet Finish is Right for You?
 
-Don't let your small business be an easy target.
+The finish of your cabinets has a huge impact on the overall look of your kitchen.
 
-## 1. Train Your Employees
+## Matte Finishes
 
-Your team is your first line of defense.
+- **Look:** Sophisticated, modern, and hides fingerprints well.
+- **Feel:** Smooth and velvety to the touch.
+- **Best for:** Contemporary and minimalist kitchens.
 
-## 2. Use Strong Passwords & 2FA
+## Glossy Finishes
 
-A simple but effective measure.
+- **Look:** Sleek, light-reflecting, and makes spaces feel larger.
+- **Feel:** Smooth and shiny.
+- **Best for:** Small kitchens and those going for a high-glam look.
 
-## 3. Keep Software Updated
+## The Verdict
 
-Patch vulnerabilities before they can be exploited.
-
-## 4. Back Up Your Data
-
-Be prepared for the worst.
+The choice depends on your personal style and the amount of natural light in your kitchen. Both can look stunning when done right.
     `,
   },
 ];

@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'vrikshakriti',
-  description: 'Your daily source for the latest insights in technology, marketing, and business growth.',
+  title: 'KitchenR',
+  description: 'Your ultimate guide to designing and building the perfect modular kitchen.',
 };
 
 export default function RootLayout({

@@ -1,6 +1,7 @@
 import { getAllPosts } from "@/lib/posts";
 import Link from 'next/link';
 import { Rss } from "lucide-react";
+import { ChefHat } from "lucide-react";
 
 export function Footer() {
   const recentPosts = getAllPosts().slice(0, 4);
@@ -11,13 +12,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-headline text-foreground hover:text-primary transition-colors">
-              <span className="inline-block p-2 bg-blue-600 text-white rounded-md">
-                <Rss size={18} />
+              <span className="inline-block p-2 bg-primary text-primary-foreground rounded-md">
+                <ChefHat size={18} />
               </span>
-              vrikshakriti
+              KitchenR
             </Link>
             <p className="text-muted-foreground text-sm">
-              Your daily source for the latest insights in technology, marketing, and business growth.
+             Your ultimate guide to designing and building the perfect modular kitchen.
             </p>
           </div>
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -40,7 +41,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t pt-6">
           <p className="text-center text-sm text-muted-foreground">
-            © 2024 vrikshakriti. All rights reserved.
+            © 2024 KitchenR. All rights reserved.
           </p>
         </div>
       </div>
