@@ -10,6 +10,9 @@ type PostPageProps = {
   };
 };
 
+// Revalidate every hour
+export const revalidate = 3600;
+
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({
