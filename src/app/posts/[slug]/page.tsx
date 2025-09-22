@@ -46,6 +46,12 @@ export default function PostPage({ params }: PostPageProps) {
   const recentPosts = allPosts
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
+  
+  const postDate = new Date(post.date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -59,11 +65,7 @@ export default function PostPage({ params }: PostPageProps) {
             <span>by {post.author}</span>
             <span className="mx-2">•</span>
             <span>
-              {new Date(post.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })}
+              {postDate}
             </span>
           </div>
         </header>

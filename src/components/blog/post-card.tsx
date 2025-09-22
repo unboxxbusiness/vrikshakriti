@@ -9,6 +9,12 @@ interface PostCardProps {
 }
 
 export function PostCard({ post }: PostCardProps) {
+  const postDate = new Date(post.date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
     <Link href={`/posts/${post.slug}`} className="group block">
       <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 bg-card overflow-hidden h-full flex flex-col">
@@ -27,7 +33,7 @@ export function PostCard({ post }: PostCardProps) {
             </Badge>
             <h3 className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">{post.title}</h3>
             <p className="text-muted-foreground text-sm mt-auto">
-              by {post.author} • {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              by {post.author} • {postDate}
             </p>
         </CardContent>
       </Card>
