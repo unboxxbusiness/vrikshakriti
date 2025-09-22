@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'vrikshakriti',
-  description: 'Your ultimate guide to designing and building the perfect modular kitchen.',
+  title: 'vrikshakriti | Modular Kitchen Design Blog',
+  description: 'Your ultimate guide to designing and building the perfect modular kitchen. Explore the latest trends, materials, and designs.',
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="en" className="h-full">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
