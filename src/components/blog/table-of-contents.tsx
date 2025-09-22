@@ -21,7 +21,7 @@ export function TableOfContents({ content }: { content: string }) {
   useEffect(() => {
     const generateToc = async () => {
       try {
-        setIsLoading(true);
+        // No need to set loading to true here, it's already true
         const generatedToc = await generateTableOfContents({ postContent: content });
         const tocItems = generatedToc.toc.map(item => ({
           ...item,
@@ -60,6 +60,8 @@ export function TableOfContents({ content }: { content: string }) {
   }, [content, toast]);
 
   useEffect(() => {
+    if (isLoading) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -77,7 +79,7 @@ export function TableOfContents({ content }: { content: string }) {
     return () => {
       elements.forEach(el => observer.unobserve(el!));
     };
-  }, [toc]);
+  }, [toc, isLoading]);
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, slug: string) => {
     e.preventDefault();
@@ -85,7 +87,10 @@ export function TableOfContents({ content }: { content: string }) {
       behavior: 'smooth',
       block: 'start',
     });
-    setActiveId(slug);
+    // This is not strictly necessary but can make the UI feel more responsive
+    if (window.history.pushState) {
+      window.history.pushState(null, '', `#${slug}`);
+    }
   };
 
   if (isLoading) {
