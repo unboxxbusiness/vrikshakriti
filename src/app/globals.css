@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 27 33% 94%;
-    --foreground: 240 10% 3.9%;
-    --card: 27 33% 94%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 27 33% 94%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 2 63% 27%;
+    --background: 210 20% 98%;
+    --foreground: 210 40% 2.8%;
+    --card: 210 20% 98%;
+    --card-foreground: 210 40% 2.8%;
+    --popover: 210 20% 98%;
+    --popover-foreground: 210 40% 2.8%;
+    --primary: 2 63% 27%; /* Dark brown: #6f1d1b */
     --primary-foreground: 40 100% 97%;
-    --secondary: 40 100% 83%;
+    --secondary: 40 100% 83%; /* Light yellow: #ffe6a7 */
     --secondary-foreground: 2 63% 27%;
-    --muted: 27 33% 91%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 40 100% 83%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 210 40% 46.1%;
+    --accent: 30 33% 91%; /* Lightish: #ede0d4 */
     --accent-foreground: 2 63% 27%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 27 33% 85%;
-    --input: 27 33% 88%;
-    --ring: 2 63% 27%;
+    --border: 210 40% 90%;
+    --input: 210 40% 92%;
+    --ring: 2 63% 32%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -31,24 +31,24 @@
     --radius: 0.5rem;
   }
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --background: 210 40% 2.8%;
+    --foreground: 210 20% 98%;
+    --card: 210 40% 2.8%;
+    --card-foreground: 210 20% 98%;
+    --popover: 210 40% 2.8%;
+    --popover-foreground: 210 20% 98%;
     --primary: 2 63% 32%;
     --primary-foreground: 40 100% 97%;
     --secondary: 40 100% 83%;
     --secondary-foreground: 2 63% 27%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 40 100% 83%;
+    --muted: 210 40% 15.9%;
+    --muted-foreground: 210 40% 64.9%;
+    --accent: 30 33% 20%;
     --accent-foreground: 2 63% 27%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 210 40% 15.9%;
+    --input: 210 40% 15.9%;
     --ring: 2 63% 32%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -69,7 +69,7 @@
     @apply text-foreground max-w-none;
   }
   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    @apply font-headline font-bold mt-8 mb-4;
+    @apply font-headline font-bold mt-8 mb-4 text-primary;
   }
   .prose h1 { @apply text-4xl; }
   .prose h2 { @apply text-3xl; }
@@ -81,13 +81,13 @@
     @apply text-primary hover:underline;
   }
   .prose blockquote {
-    @apply border-l-4 border-accent bg-secondary/20 p-4 rounded-r-lg my-4 italic;
+    @apply border-l-4 border-accent bg-accent/30 p-4 rounded-r-lg my-4 italic;
   }
   .prose code:not(pre > code) {
-    @apply rounded bg-muted px-1.5 py-1 font-code text-sm;
+    @apply rounded bg-muted px-1.5 py-1 font-code text-sm text-primary;
   }
   .prose pre {
-    @apply rounded-lg bg-muted p-4 text-sm my-4 overflow-x-auto;
+    @apply rounded-lg bg-muted/50 p-4 text-sm my-4 overflow-x-auto;
   }
   .prose pre code {
     @apply bg-transparent p-0;

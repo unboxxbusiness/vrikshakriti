@@ -1,6 +1,8 @@
 import { getPostBySlug, getAllPosts } from '@/lib/posts';
 import { notFound } from 'next/navigation';
 import { PostPageClient } from './post-page-client';
+import { Separator } from '@/components/ui/separator';
+import { RecentPosts } from '@/components/blog/recent-posts';
 
 type PostPageProps = {
   params: {
@@ -42,5 +44,11 @@ export default function PostPage({ params }: PostPageProps) {
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
 
-  return <PostPageClient post={post} recentPosts={recentPosts} />;
+  return (
+    <>
+      <PostPageClient post={post} recentPosts={recentPosts} />
+      <Separator className="my-16" />
+      <RecentPosts posts={recentPosts} />
+    </>
+  );
 }
