@@ -2,136 +2,175 @@ import { Post } from './types';
 
 const posts: Post[] = [
   {
-    slug: 'getting-started-with-nextjs',
-    title: 'Getting Started with Next.js',
-    date: '2024-07-20',
-    summary:
-      'A comprehensive guide to setting up your first Next.js application. We cover installation, project structure, and the first few steps to get you running.',
-    content: `
-# Getting Started with Next.js
-
-Welcome to our guide on getting started with Next.js! This post will walk you through the initial setup and basic concepts.
-
-## Installation
-
-To create a Next.js app, open your terminal, \`cd\` into the directory you’d like to create the app in, and run the following command:
-
-\`\`\`bash
-npx create-next-app@latest
-\`\`\`
-
-You'll be asked a series of questions to configure your project. For this tutorial, we'll stick with the defaults.
-
-## Project Structure
-
-After installation, your project structure will look something like this:
-
-- \`app/\`: The core of your application, using the App Router.
-- \`public/\`: Static assets like images.
-- \`package.json\`: Project dependencies and scripts.
-
-## First Page
-
-Open \`app/page.tsx\`. This is the entry point for your homepage. You can start editing this file to see changes on your development server.
-
-\`\`\`tsx
-export default function Home() {
-  return <h1>Hello, Next.js!</h1>;
-}
-\`\`\`
-
-That's it for a basic start! In the next posts, we'll explore routing, data fetching, and more advanced features.
-    `,
-  },
-  {
-    slug: 'styling-in-nextjs',
-    title: 'Styling in Next.js with Tailwind CSS',
-    date: '2024-07-18',
-    summary:
-      'Learn how to integrate and use Tailwind CSS for styling your Next.js applications. A practical approach to utility-first styling.',
-    content: `
-# Styling in Next.js with Tailwind CSS
-
-Styling is a crucial part of any web application. Next.js offers several ways to style your app, but one of the most popular is using Tailwind CSS.
-
-## Why Tailwind CSS?
-
-Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs without writing custom CSS. This makes it fast and efficient.
-
-## Setup
-
-Integrating Tailwind CSS with Next.js is straightforward. The \`create-next-app\` CLI can even set it up for you automatically. If you're adding it to an existing project, follow the official guide.
-
-You'll have a \`tailwind.config.ts\` file where you can customize your theme, and a \`globals.css\` file for base styles and Tailwind directives.
-
-\`\`\`css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-\`\`\`
-
-## Using Utility Classes
-
-Now you can use Tailwind's utility classes directly in your JSX.
-
-\`\`\`tsx
-export default function StyledCard() {
-  return (
-    <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-      <div className="shrink-0">
-        <img className="h-12 w-12" src="/logo.svg" alt="ChitChat Logo">
-      </div>
-      <div>
-        <div className="text-xl font-medium text-black">ChitChat</div>
-        <p className="text-slate-500">You have a new message!</p>
-      </div>
-    </div>
-  );
-}
-\`\`\`
-
-This approach keeps your styles co-located with your components, making them easier to maintain.
-    `,
-  },
-  {
-    slug: 'understanding-server-components',
-    title: 'Understanding React Server Components',
+    slug: 'the-future-of-work-remote-collaboration-tools',
+    title: 'The Future of Work: Remote Collaboration Tools',
     date: '2024-07-15',
+    category: 'Technology',
+    author: 'Jane Doe',
+    imageUrl: 'https://picsum.photos/seed/1/600/400',
     summary:
-      'A deep dive into React Server Components and how they are changing the way we build web applications with Next.js. Explore the benefits and use cases.',
+      "An in-depth look at the tools shaping remote collaboration and the future of work.",
     content: `
-# Understanding React Server Components
+# The Future of Work: Remote Collaboration Tools
 
-React Server Components (RSCs) are a new architecture introduced by the React team, and Next.js is one of the first frameworks to adopt them fully with the App Router.
+The world of work is changing, and remote collaboration is at the forefront. This post explores the tools that are making it possible.
 
-## What are they?
+## Communication Hubs
 
-Server Components are React components that run exclusively on the server. They are never shipped to the client, which means their code doesn't contribute to your JavaScript bundle size.
+Tools like Slack and Microsoft Teams have become the new office hallways.
 
-### Key Benefits
+## Project Management
 
-1.  **Zero Bundle Size**: They don't add to the client-side JavaScript.
-2.  **Direct Backend Access**: They can directly access server-side resources like databases or file systems without needing an API layer.
-3.  **Automatic Code Splitting**: They act as natural code-split points.
+Jira, Asana, and Trello help teams stay organized and on track, no matter where they are.
 
-## Client Components
+## Video Conferencing
 
-Of course, you still need interactivity. Components that use state, effects, or browser-only APIs must be marked as Client Components with the \`"use client"\` directive at the top of the file.
+Zoom and Google Meet are essential for face-to-face interaction.
+    `,
+  },
+  {
+    slug: 'mastering-digital-marketing-in-2024',
+    title: 'Mastering Digital Marketing in 2024',
+    date: '2024-07-10',
+    category: 'Marketing',
+    author: 'John Smith',
+    imageUrl: 'https://picsum.photos/seed/2/600/400',
+    summary:
+      'Stay ahead of the curve with these essential digital marketing strategies for 2024.',
+    content: `
+# Mastering Digital Marketing in 2024
 
-\`\`\`tsx
-"use client";
+Digital marketing is always evolving. Here's what you need to know to succeed in 2024.
 
-import { useState } from 'react';
+## AI in Marketing
 
-export default function Counter() {
-  const [count, setCount] = useState(0);
-  return <button onClick={() => setCount(count + 1)}>{count}</button>;
-}
-\`\`\`
+Artificial intelligence is personalizing marketing campaigns like never before.
 
-## Best of Both Worlds
+## Video Content is King
 
-The power of the new model lies in interleaving Server and Client Components. You can render a Server Component that fetches data, and inside it, render a Client Component that provides interactivity, passing the server-fetched data as props. This gives you the performance benefits of server-rendering with the rich interactivity of a client-side app.
+Short-form video on platforms like TikTok and Instagram Reels is essential for engagement.
+
+## Privacy-First Marketing
+
+With changing privacy laws, building trust with your audience is key.
+    `,
+  },
+  {
+    slug: 'the-rise-of-ai-in-business-automation',
+    title: 'The Rise of AI in Business Automation',
+    date: '2024-07-05',
+    category: 'Business',
+    author: 'Emily Davis',
+    imageUrl: 'https://picsum.photos/seed/3/600/400',
+    summary: 'Discover how AI is revolutionizing business automation and what it means for your company.',
+    content: `
+# The Rise of AI in Business Automation
+
+AI is no longer science fiction; it's a business reality.
+
+## What is AI Automation?
+
+It's the use of AI to automate repetitive tasks, freeing up humans for more creative work.
+
+## Examples in Action
+
+- Customer service chatbots
+- Automated financial reporting
+- AI-powered supply chain optimization
+
+## Getting Started
+
+Start small. Identify a bottleneck in your business and see if an AI tool can help.
+    `,
+  },
+  {
+    slug: 'building-a-successful-startup-key-strategies',
+    title: 'Building a Successful Startup: Key Strategies',
+    date: '2024-06-30',
+    category: 'Business',
+    author: 'David Lee',
+    imageUrl: 'https://picsum.photos/seed/4/600/400',
+    summary: 'From idea to execution, these are the key strategies for building a startup that lasts.',
+    content: `
+# Building a Successful Startup: Key Strategies
+
+Got a great idea? Here's how to turn it into a successful business.
+
+## 1. Validate Your Idea
+
+Before you build anything, make sure there's a market for it.
+
+## 2. Build a Strong Team
+
+Your first hires are the most important.
+
+## 3. Focus on a Niche
+
+Don't try to be everything to everyone. Solve a specific problem for a specific audience.
+
+## 4. Iterate, Iterate, Iterate
+
+Launch, get feedback, and improve. Repeat.
+    `,
+  },
+  {
+    slug: 'data-analytics-for-business-growth',
+    title: 'Data Analytics for Business Growth',
+    date: '2024-06-25',
+    category: 'Technology',
+    author: 'Jessica Brown',
+    imageUrl: 'https://picsum.photos/seed/5/600/400',
+    summary: "Unlock the power of your data to drive business growth and make smarter decisions.",
+    content: `
+# Data Analytics for Business Growth
+
+Data is one of your most valuable assets. Here's how to use it.
+
+## What to Track?
+
+- Customer behavior
+- Sales trends
+- Website traffic
+
+## Tools of the Trade
+
+- Google Analytics
+- Tableau
+- Mixpanel
+
+## Making Data-Driven Decisions
+
+Use your data to inform everything from product development to marketing campaigns.
+    `,
+  },
+  {
+    slug: 'cybersecurity-best-practices-for-small-businesses',
+    title: 'Cybersecurity Best Practices for Small Businesses',
+    date: '2024-06-20',
+    category: 'Technology',
+    author: 'Robert Green',
+    imageUrl: 'https://picsum.photos/seed/6/600/400',
+    summary: 'Protect your business from cyber threats with these essential security practices.',
+    content: `
+# Cybersecurity Best Practices for Small Businesses
+
+Don't let your small business be an easy target.
+
+## 1. Train Your Employees
+
+Your team is your first line of defense.
+
+## 2. Use Strong Passwords & 2FA
+
+A simple but effective measure.
+
+## 3. Keep Software Updated
+
+Patch vulnerabilities before they can be exploited.
+
+## 4. Back Up Your Data
+
+Be prepared for the worst.
     `,
   },
 ];

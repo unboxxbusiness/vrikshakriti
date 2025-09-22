@@ -4,4 +4,7 @@ export interface Post {
   date: string;
   summary: string;
   content: string;
+  category: string;
+  author: string;
+  imageUrl: string;
 }
