@@ -14,8 +14,8 @@ interface PostCardProps {
 
 export function PostCard({ post }: PostCardProps) {
   return (
-    <Link href={`/posts/${post.slug}`} className="group block">
-      <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 bg-card overflow-hidden h-full flex flex-col border-border/50">
+    <Card className="group transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 bg-card overflow-hidden h-full flex flex-col border-border/50">
+      <Link href={`/posts/${post.slug}`} className="block">
         <div className="relative aspect-video">
           <Image
             src={post.imageUrl}
@@ -25,23 +25,24 @@ export function PostCard({ post }: PostCardProps) {
             data-ai-hint={`${post.category} ${post.title.split(' ')[0]}`}
           />
         </div>
-        <CardContent className="p-6 flex flex-col flex-grow">
-          <div className="mb-2 self-start">
-             <Link href={`/category/${post.category.toLowerCase()}`} className={cn(
-                "relative z-10 rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
-                "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-             )}>
+      </Link>
+      <CardContent className="p-6 flex flex-col flex-grow">
+        <div className="mb-2 self-start">
+           <Link href={`/category/${post.category.toLowerCase()}`} className="relative z-10">
+              <Badge variant="secondary" className="capitalize transition-colors hover:bg-secondary/80">
                 {post.category}
+              </Badge>
+          </Link>
+        </div>
+        <h3 className="font-headline text-xl font-bold mb-2 text-primary/90">
+            <Link href={`/posts/${post.slug}`} className="hover:text-primary transition-colors">
+                {post.title}
             </Link>
-          </div>
-          <h3 className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors text-primary/90">
-            {post.title}
-          </h3>
-          <p className="text-muted-foreground text-sm mt-auto">
-            by {post.author} • <FormattedDate dateString={post.date} />
-          </p>
-        </CardContent>
-      </Card>
-    </Link>
+        </h3>
+        <p className="text-muted-foreground text-sm mt-auto">
+          by {post.author} • <FormattedDate dateString={post.date} />
+        </p>
+      </CardContent>
+    </Card>
   );
 }
