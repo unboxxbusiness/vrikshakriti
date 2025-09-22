@@ -10,7 +10,7 @@ export default function Home() {
     <div className="max-w-6xl mx-auto">
       <div className="text-center py-16">
         <h1 className="text-5xl md:text-6xl font-extrabold font-headline mb-4 tracking-tight">
-          The Innovate Blog
+          vrikshakriti
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
           Your daily source for the latest insights in technology, marketing, and business growth.

@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PostPageProps) {
   }
 
   return {
-    title: `${post.title} | Innovate Blog`,
+    title: `${post.title} | vrikshakriti`,
     description: post.summary,
   };
 }

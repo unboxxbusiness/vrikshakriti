@@ -12,7 +12,7 @@ export function Header() {
               <span className="inline-block p-2 bg-blue-600 text-white rounded-md">
                 <Rss size={18} />
               </span>
-              Innovate
+              vrikshakriti
             </Link>
           </div>
           <nav>

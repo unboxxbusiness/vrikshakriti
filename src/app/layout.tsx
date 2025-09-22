@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Innovate Blog',
+  title: 'vrikshakriti',
   description: 'Your daily source for the latest insights in technology, marketing, and business growth.',
 };
 
