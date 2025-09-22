@@ -22,11 +22,11 @@ export function Header() {
               <span className="inline-block p-1 bg-card rounded-md shadow-sm">
                 <Logo />
               </span>
-              <span className="text-primary">vrikshakriti</span>
+              <span className="text-primary">Vrikshakriti</span>
             </Link>
           </div>
           <nav>
-            <Button>Subscribe</Button>
+            <Button>Get a Free Quote</Button>
           </nav>
         </div>
       </div>

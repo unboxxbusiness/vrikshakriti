@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'vrikshakriti | Modular Kitchen Design Blog',
-  description: 'Your ultimate guide to designing and building the perfect modular kitchen. Explore the latest trends, materials, and designs.',
+  title: 'Vrikshakriti | Luxury Modular Kitchens, Har Baar',
+  description: 'Discover bespoke luxury modular kitchens from Vrikshakriti. We craft exquisite, functional, and timeless kitchen spaces tailored to your lifestyle.',
 };
 
 export default function RootLayout({

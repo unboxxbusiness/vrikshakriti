@@ -24,10 +24,10 @@ export function Footer() {
               <span className="inline-block p-1 bg-card rounded-md shadow-sm">
                 <Logo />
               </span>
-              <span className="text-primary">vrikshakriti</span>
+              <span className="text-primary">Vrikshakriti</span>
             </Link>
             <p className="text-muted-foreground text-sm">
-             Your ultimate guide to designing and building the perfect modular kitchen.
+             Crafting Exquisite Modular Kitchens for Your Home.
             </p>
           </div>
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -50,7 +50,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t pt-6 border-border/50">
           <p className="text-center text-sm text-muted-foreground">
-            © 2024 vrikshakriti. All rights reserved.
+            © 2024 Vrikshakriti. All rights reserved.
           </p>
         </div>
       </div>

@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PostPageProps) {
   }
 
   return {
-    title: `${post.title} | vrikshakriti`,
+    title: `${post.title} | Vrikshakriti`,
     description: post.summary,
   };
 }
@@ -49,7 +49,7 @@ export default function PostPage({ params }: PostPageProps) {
 
   return (
     <>
-      <PostPageClient post={post} recentPosts={recentPosts} />
+      <PostPageClient post={post} />
       <Separator className="my-16" />
       <RecentPosts posts={recentPosts} />
     </>
