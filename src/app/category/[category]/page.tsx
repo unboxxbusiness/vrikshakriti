@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Separator } from '@/components/ui/separator';
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { CategoryList } from '@/components/blog/category-list';
 
 type CategoryPageProps = {
     params: {
