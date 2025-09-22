@@ -17,7 +17,7 @@ export function PostPageClient({ post }: PostPageClientProps) {
     <>
       <header className="mb-8">
         <Link href={`/category/${post.category.toLowerCase()}`}>
-            <Badge variant="secondary" className="mb-4 bg-accent text-accent-foreground hover:bg-accent/80 transition-colors">
+            <Badge variant="secondary" className="mb-4 bg-accent text-accent-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
               {post.category}
             </Badge>
         </Link>

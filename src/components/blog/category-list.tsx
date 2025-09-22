@@ -10,7 +10,7 @@ export function CategoryList({ categories, currentCategory }: CategoryListProps)
   return (
     <div className="flex flex-wrap items-center justify-center gap-2">
       <Link href="/">
-        <Badge variant={!currentCategory ? 'default' : 'secondary'} className="capitalize transition-colors hover:bg-primary/90">
+        <Badge variant={!currentCategory ? 'default' : 'secondary'} className="capitalize transition-colors hover:bg-primary hover:text-primary-foreground">
           All Posts
         </Badge>
       </Link>
@@ -18,7 +18,7 @@ export function CategoryList({ categories, currentCategory }: CategoryListProps)
         <Link key={category} href={`/category/${category.toLowerCase()}`}>
           <Badge
             variant={currentCategory === category.toLowerCase() ? 'default' : 'secondary'}
-            className="capitalize transition-colors hover:bg-primary/90"
+            className="capitalize transition-colors hover:bg-primary hover:text-primary-foreground"
           >
             {category}
           </Badge>
