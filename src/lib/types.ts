@@ -7,4 +7,6 @@ export interface Post {
   category: string;
   author: string;
   imageUrl: string;
+  authorImage: string;
+  authorBio: string;
 }

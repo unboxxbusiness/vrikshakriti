@@ -7,6 +7,8 @@ const posts: Post[] = [
     date: '2024-07-15',
     category: 'Technology',
     author: 'Jane Doe',
+    authorImage: 'https://picsum.photos/seed/author1/100/100',
+    authorBio: 'Jane Doe is a tech enthusiast and writer specializing in the future of work and digital collaboration.',
     imageUrl: 'https://picsum.photos/seed/1/600/400',
     summary:
       "An in-depth look at the tools shaping remote collaboration and the future of work.",
@@ -34,6 +36,8 @@ Zoom and Google Meet are essential for face-to-face interaction.
     date: '2024-07-10',
     category: 'Marketing',
     author: 'John Smith',
+    authorImage: 'https://picsum.photos/seed/author2/100/100',
+    authorBio: 'John Smith is a digital marketing strategist with over 10 years of experience helping businesses grow online.',
     imageUrl: 'https://picsum.photos/seed/2/600/400',
     summary:
       'Stay ahead of the curve with these essential digital marketing strategies for 2024.',
@@ -61,6 +65,8 @@ With changing privacy laws, building trust with your audience is key.
     date: '2024-07-05',
     category: 'Business',
     author: 'Emily Davis',
+    authorImage: 'https://picsum.photos/seed/author3/100/100',
+    authorBio: 'Emily Davis writes about the intersection of technology and business, with a focus on AI and automation.',
     imageUrl: 'https://picsum.photos/seed/3/600/400',
     summary: 'Discover how AI is revolutionizing business automation and what it means for your company.',
     content: `
@@ -89,6 +95,8 @@ Start small. Identify a bottleneck in your business and see if an AI tool can he
     date: '2024-06-30',
     category: 'Business',
     author: 'David Lee',
+    authorImage: 'https://picsum.photos/seed/author4/100/100',
+    authorBio: 'David Lee is a serial entrepreneur and startup mentor who loves sharing his experiences with aspiring founders.',
     imageUrl: 'https://picsum.photos/seed/4/600/400',
     summary: 'From idea to execution, these are the key strategies for building a startup that lasts.',
     content: `
@@ -119,6 +127,8 @@ Launch, get feedback, and improve. Repeat.
     date: '2024-06-25',
     category: 'Technology',
     author: 'Jessica Brown',
+    authorImage: 'https://picsum.photos/seed/author5/100/100',
+    authorBio: 'Jessica Brown is a data scientist who is passionate about helping businesses unlock the power of their data.',
     imageUrl: 'https://picsum.photos/seed/5/600/400',
     summary: "Unlock the power of your data to drive business growth and make smarter decisions.",
     content: `
@@ -149,6 +159,8 @@ Use your data to inform everything from product development to marketing campaig
     date: '2024-06-20',
     category: 'Technology',
     author: 'Robert Green',
+    authorImage: 'https://picsum.photos/seed/author6/100/100',
+    authorBio: 'Robert Green is a cybersecurity expert dedicated to helping small businesses protect themselves from online threats.',
     imageUrl: 'https://picsum.photos/seed/6/600/400',
     summary: 'Protect your business from cyber threats with these essential security practices.',
     content: `
