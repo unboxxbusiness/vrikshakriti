@@ -1,7 +1,11 @@
 import { getAllPosts } from '@/lib/posts';
 import { PostList } from '@/components/blog/post-list';
-import { Input } from '@/components/ui/input';
-import { Search } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'vrikshakriti | Modular Kitchen Design Blog',
+  description: 'Your ultimate guide to designing and building the perfect modular kitchen. Explore the latest trends, materials, and designs.',
+};
 
 export default function Home() {
   const allPosts = getAllPosts();
