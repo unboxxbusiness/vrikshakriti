@@ -5,17 +5,15 @@ import { MarkdownRenderer } from '@/components/blog/markdown-renderer';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { AuthorBio } from '@/components/blog/author-bio';
-import { RecentPosts } from '@/components/blog/recent-posts';
 import { Post } from '@/lib/types';
 import { FormattedDate } from '@/components/blog/formatted-date';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 
 interface PostPageClientProps {
   post: Post;
-  recentPosts: Post[];
 }
 
-export function PostPageClient({ post, recentPosts }: PostPageClientProps) {
+export function PostPageClient({ post }: PostPageClientProps) {
   return (
     <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12">
       <article className="lg:col-span-3">
@@ -52,7 +50,7 @@ export function PostPageClient({ post, recentPosts }: PostPageClientProps) {
         <AuthorBio post={post} />
       </article>
       
-      <aside className="lg:col-span-1 lg:sticky top-24 self-start">
+      <aside className="lg:col-span-1">
         <TableOfContents content={post.content} />
       </aside>
 
